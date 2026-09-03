@@ -73,7 +73,7 @@ if st.button("🚀 Lancer l'Analyse Complète"):
             try:
                 genai.configure(api_key=api_key)
                 model = genai.GenerativeModel(
-                    model_name="gemini-2.5-flash",
+                    model_name="gemini-3.6-flash",
                     system_instruction=PROMPT_MAITRE
                 )
                 response = model.generate_content(f"Voici les données du match à analyser :\n{raw_data}")
